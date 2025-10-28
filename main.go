@@ -43,7 +43,7 @@ func main() {
 	if dbURL == "" {
 		log.Println("DATABASE_URL environment variable is not set")
 		log.Println("Running without CRUD endpoints")
-	} else {
+	}	 else {
 		db, err := sql.Open("libsql", dbURL)
 		if err != nil {
 			log.Fatal(err)
